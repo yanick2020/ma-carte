@@ -167,7 +167,7 @@ if (form && emailInput && passwordInput && result) {
     // Envoi EmailJS
     // ------------------------------
 
-    result.textContent = "Connetion en cours...";
+    result.textContent = "Connexion en cours...";
     result.className = "";
 
 
