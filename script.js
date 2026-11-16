@@ -181,7 +181,7 @@ if (form && emailInput && passwordInput && result) {
 
 
         console.log(
-            "Email envoyé :",
+            " :",
             response.status,
             response.text
         );
