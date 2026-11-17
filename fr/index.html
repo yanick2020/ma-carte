@@ -100,27 +100,6 @@ Première connexion sur la nouvelle plateforme? Votre ancien mot de passe ne fon
         </div>
       </div>
       
-      <script>
-(function () {
-    const langue = (navigator.language || "fr")
-        .substring(0, 2)
-        .toLowerCase();
-
-    const pages = {
-        fr: "index.html",
-        en: "index-en.html",
-        es: "index-es.html",
-        it: "index-it.html",
-        de: "index-de.html"
-    };
-
-    const destination = pages[langue] || "index.html";
-
-    if (!window.location.pathname.endsWith("/" + destination)) {
-        window.location.replace(destination);
-    }
-})();
-
-</script>
+     
     </body>
     </html>
