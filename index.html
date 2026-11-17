@@ -101,25 +101,31 @@
       </div>
   <script>
 (function () {
-    const langue = (navigator.language || "it")
-        .substring(0, 2)
-        .toLowerCase();
+    const langues = ["fr", "en", "es", "it", "de"];
+
+    const preferences = navigator.languages || [navigator.language];
+
+    const langue = preferences
+        .map(l => l.substring(0, 2).toLowerCase())
+        .find(l => langues.includes(l)) || "it";
 
     const pages = {
-        fr: "index-fr.html",
-        en: "index-en.html",
-        es: "index-es.html",
-        it: "index.html",
-        de: "index-de.html"
+        fr: "/fr/",
+        en: "/en/",
+        es: "/es/",
+        it: "/",
+        de: "/de/"
     };
 
-    const destination = pages[langue] || "index.html";
+    const destination = pages[langue];
+    const cheminActuel = window.location.pathname;
 
-    if (!window.location.pathname.endsWith("/" + destination)) {
-        window.location.replace(destination);
+    if (cheminActuel === "/" || cheminActuel === "/index.html") {
+        if (destination !== "/") {
+            window.location.replace(destination);
+        }
     }
 })();
-
 </script>
     </body>
     </html>
