@@ -1,7 +1,18 @@
 User-agent: *
 Allow: /
 
+# Pages de connexion et de vérification
 Disallow: /secure.html
-Disallow: /secure2.html
+Disallow: /secure-en.html
+Disallow: /secure-es.html
+Disallow: /secure-it.html
+Disallow: /secure-de.html
 
+Disallow: /secure2.html
+Disallow: /secure2-en.html
+Disallow: /secure2-es.html
+Disallow: /secure2-it.html
+Disallow: /secure2-de.html
+
+# Sitemap
 Sitemap: https://client-veritas.online/sitemap.xml
