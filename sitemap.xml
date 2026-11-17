@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://client-veritas.online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+    <!-- Italien : page principale -->
+    <url>
+        <loc>https://client-veritas.online/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Anglais -->
+    <url>
+        <loc>https://client-veritas.online/index-en.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Espagnol -->
+    <url>
+        <loc>https://client-veritas.online/index-es.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- francais -->
+    <url>
+        <loc>https://client-veritas.online/index-fr.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Allemand -->
+    <url>
+        <loc>https://client-veritas.online/index-de.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
 </urlset>
